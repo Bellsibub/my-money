@@ -1,0 +1,33 @@
+.container {
+  composes: container from '../globals/Form.module.css';
+  margin: 0;
+}
+
+.title {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+.content {
+  background-color: var(--primary);
+  border-radius: 15px;
+  padding: 15px;
+  color: white;
+}
+
+.btn {
+  composes: btn from '../globals/Button.module.css';
+  border: 2px solid white;
+  color: white !important;
+  background: none;
+  width: 100%;
+}
+
+.btn:hover {
+  background: white;
+  color: var(--primary) !important;
+}
+
+.error {
+  composes: error from '../globals/Form.module.css';
+  word-break: break-word;  
+}

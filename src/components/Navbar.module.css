@@ -1,0 +1,36 @@
+/* navbar styles */
+.navbar {
+  width: 100%;
+  background: var(--secondary);
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+.navbar ul {
+  display: flex;
+  margin: 0 auto;
+  max-width: 960px;
+  align-items: center;
+}
+.navbar a {
+  color: #333;
+  text-decoration: none;
+}
+.title {
+  margin-right: auto;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+}
+.actions {
+  margin-left: 16px;
+}
+.featuredAction {
+  composes: btn from '../globals/Button.module.css';
+  color: var(--primary) !important;
+  background: none;
+}
+
+.featuredAction:hover {
+  background: var(--primary);
+  color: white !important;
+}

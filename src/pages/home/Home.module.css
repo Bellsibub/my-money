@@ -1,0 +1,20 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 960px;
+  margin: 60px auto;
+}
+
+.container > * {
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-flow: column-reverse wrap;
+  }
+  .container > form {
+    margin: 0 auto;
+  }
+}

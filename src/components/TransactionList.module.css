@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.item {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  border-left: 4px solid var(--primary);
+}
+
+.item > *:not(.action) {
+  padding: 20px;
+}
+
+.name {
+  font-size: 1.4em;
+  color: #777;
+  padding-right: 5px;
+}
+
+.price {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-left: auto;
+  color: #777;
+}
+
+.action {
+  composes: btn from '../globals/Button.module.css';
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  color: var(--primary) !important;
+  background: none;
+}
+
+.action:hover {
+  background: var(--primary);
+  color: white !important;
+}

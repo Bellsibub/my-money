@@ -1,0 +1,22 @@
+.btn {
+  background: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+  letter-spacing: 2px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.btn:disabled {
+  color: grey !important;
+  background: lightgrey !important;
+  border-color: lightgrey !important;
+}
+.btn:hover {
+  color: var(--primary);
+  background: none;
+}

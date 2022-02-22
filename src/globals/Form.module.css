@@ -1,0 +1,36 @@
+.container {
+  max-width: 360px;
+  margin: 60px auto;
+  padding: 20px;
+  display: flex;
+  flex-flow: column wrap;
+}
+.container label {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 15px 0;
+}
+.container span {
+  display: block;
+  margin-bottom: 6px;
+}
+.container input {
+  border-radius: 20px;
+  border: 1px solid #777;
+  padding: 8px 20px;
+  font-size: 1em;
+  color: #777;
+}
+.btn {
+  composes: btn from './Button.module.css';
+  margin-top: 15px;
+}
+.error {
+  color: red;
+  border: 1px solid red;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 15px;
+  background: #ff00001a;
+}
